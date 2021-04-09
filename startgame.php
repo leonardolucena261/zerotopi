@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     extract($_GET);
     $pdo = new PDO('pgsql:host=localhost;dbname=zerotopi;user=postgres;password=admin');
 
@@ -16,6 +18,8 @@
         if($stmt->rowCount() > 0){
             //inserir com sucesso redirencionar
             var_dump($stmt->rowCount());
+            $_SESSION['nome'] = $nome;
+            $_SESSION['email'] = $email;
         }
     }else{
         if($resultado['nome'] != $nome){
