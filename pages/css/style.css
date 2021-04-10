@@ -1,0 +1,177 @@
+.margin5{
+    margin-top: 5%;
+}
+
+.margin10{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+#logo {
+    width: 100%;
+    /* 
+    width: 445px;
+    height: 64.74px;
+    position: absolute;
+    left: 165px;
+    top: 64px; */
+}
+
+#tile {
+    /* position: absolute;
+    width: 238px;
+    height: 18px;
+    left: 165px;
+    top: 169px; */
+    width: 100%;
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+}
+
+#card1 {
+    /* position: absolute;
+    width: 730px;
+    height: 304.84px;
+    left: 165px;
+    top: 208px; 
+    padding: 40px;*/
+    background: #002863;
+    border-radius: 19px;
+}
+
+#card1img1 {
+    background: #002863;
+    border-radius: 19px;
+}
+
+#card1img2 {
+    position: relative;
+    left: 30%;
+}
+
+#card1text1{    
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #F2F2F2;
+    /* position: relative;
+    left: 20%; */
+}
+
+#card1text2 {
+font-family: Rawline;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+font-feature-settings: 'pnum' on, 'lnum' on;
+padding-top: 16px;
+color: #F2F2F2;
+}
+
+#card1text3 {
+font-family: Rawline;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+display: flex;
+align-items: center;
+font-feature-settings: 'pnum' on, 'lnum' on;
+padding-top: 16px;
+color: #F2F2F2;
+}
+
+.paddingtop16 {
+    padding-top: 16px;
+}
+
+#ranking{
+    width: 100%;
+/* position: relative;
+left: 500px; */
+}
+
+.nomeJogador{
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+}
+
+.pontosJogador{
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+}
+
+.rankingTitle {
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+}
+
+.cardTrilha{
+    background: #F2F2F2;
+    border-radius: 19px;
+}
+
+.cardTrilhaTitulo{
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+}
+
+.cardTrilhaTexto{
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+}
