@@ -1,0 +1,443 @@
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Do Zero à PI</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	
+  </head>
+  <body>
+
+    <div class="container">
+		<!-- Cabeçalho -->
+		<div class="row mt-4">
+			<!-- Logo -->
+			<div class="col-md-5">
+				<img id="logo" alt="Do Zero à PI Logo" src="../pages/img/Zerotopi.png">
+			</div>
+			<!-- Troféu Player -->
+			<div class="col-md-1 offset-md-3">
+				<img alt="Trofeu" src="../pages/img/Medal1.png">
+			</div>
+			<!-- Avatar Player -->
+			<div class="col-md-1">
+				<img alt="Avatar" src="../pages/img/Avatar4.png">
+			</div>
+			<!-- Nome Player -->
+			<div class="col-md-2">
+					<span class="nomeJogador">Jogador 1</span>
+					<span class="pontosJogador">360 pontos</span>
+			</div>
+		</div>
+
+		<!-- fechar -->
+		<div id="tile" class="row mt-4">
+			<button type="button" class="close" aria-label="Close" href="#link" value="index">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		
+		<!-- Bloco 1 -->
+		<div class="row mt-4">
+			
+			<!-- coluna esquerda -->
+			<div class="col-md-5 p-4">
+
+				<!-- coluna esquerda Linha1 -->
+				<div class="d-flex justify-content-between">
+
+					<!-- coluna esquerda Imagem Trilha -->
+					<div class="col-md-5">
+						<img alt="Imagem do R de Registro" src="../pages/img/Img2.png">
+					</div>
+
+					<!-- coluna esquerda Sua Pontuação -->
+					<div class="mt-3">
+						<span class="cardTrilhaTitulo">Trilha de Marcas</span>
+					</div>
+				</div>
+
+				<!-- coluna esquerda Linha2 -->
+				<div class="d-flex justify-content-between mt-3">
+
+					<!-- Titulo da trilha e descrição -->
+					<div  class="mt-3">
+						<span class="rankingTitle">Continue o Desafio</span>
+						<span class="cardTrilhaTexto mt-3">Registrar uma marca é um passo importante para quem acredita no seu negócio. Aprenda de forma divertida um pouco mais sobre o passo a passo processo de registro no INPI.</span>
+					</div>
+				</div>
+
+				<!-- coluna esquerda Linha3 -->
+				<div class="d-flex justify-content-between mt-3">
+
+					<!-- coluna tempo da trilha -->
+					<div>
+						<img alt="Tempo trilha" src="../pages/img/clock.svg"> 5 min
+					</div>
+
+					<!-- coluna esquerda Sua Pontuação -->
+					<div>
+						<img alt="Quantos passos" src="../pages/img/play.svg"> 6 passos
+					</div>
+				</div>
+
+				<!-- coluna esquerda Linha4 -->
+				<div class="d-flex mt-3">
+
+					<!-- coluna Medalha 1 -->
+					<div class="p-2">
+						<img alt="Tempo trilha" src="../pages/img/medalTime.svg">
+						<br>
+						<span>Veloz</span>
+					</div>
+
+					<!-- coluna Medalha 2 -->
+					<div class="p-2 ml-2">
+						<img alt="Tempo trilha" src="../pages/img/medalCheck.svg">
+						<br>
+						<span>Acertivo</span>
+					</div>
+
+					<!-- Porcentagem -->
+					<div class="ml-auto p-2">
+						<!-- <img alt="Porcentagem concluida" src="../pages/img/porcent.png"> -->
+						<canvas id="chPie" style="max-width: 100px"></canvas>
+					</div>
+
+				</div>
+
+				<!-- coluna esquerda Linha5 -->
+				<div class="d-flex justify-content-between mt-3">
+
+					<!-- Titulo da Conhecimentos -->
+					<div  class="mt-3">
+						<span class="rankingTitle">Conhecimentos</span>
+					</div>
+				</div>
+
+				<!-- coluna esquerda Linha6 -->
+				<div class="d-flex justify-content-between mt-3">
+
+					<!-- coluna pilula conhecimento -->
+					<div>
+						<span class="badge badge-pill badge-info">Marcas</span>
+					</div>
+
+					<!-- coluna pilula conhecimento -->
+					<div>
+						<span class="badge badge-pill badge-info">Marcas</span>
+					</div>
+
+					<!-- coluna pilula conhecimento -->
+					<div>
+						<span class="badge badge-pill badge-info">Marcas</span>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- coluna direita -->
+			<div class="col-md-6 offset-md-1">
+
+				<!-- coluna direita Card1 -->
+				<div class="cardTrilhaDetalhe row mt-4 p-3">
+
+					<!-- coluna direita Card1 linha1 -->
+					<div class="d-flex justify-content-between mt-3">
+
+						<!-- coluna numero Passo -->
+						<div class="p-2">
+							<h5><span class="badge badge-pill badge-primary">1</span></h5>
+						</div>
+
+						<!-- Titulo da Conhecimentos -->
+						<div  class="p-2">
+							<span class="rankingTitle">Conceitos Básicos</span>
+						</div>
+
+						<!-- coluna tempo da trilha -->
+						<div class="p-2">
+							<img alt="Tempo trilha" src="../pages/img/clock.svg"> 2 min
+						</div>
+
+						<!-- coluna esquerda Sua Pontuação -->
+						<div class="p-2">
+							<img alt="Quantos passos" src="../pages/img/play.svg"> 5 perguntas
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card1 linha2 -->
+					<div class="d-flex justify-content-between m-3">
+
+						<!-- Descrição do passo-->
+						<div  class="mt-3">
+							<span class="cardTrilhaTexto">Registrar uma marca é um passo importante para quem acredita no seu negócio. Aprenda de forma divertida um pouco mais sobre o passo a passo processo de registro no INPI.</span>
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card1 linha2 -->
+					<div class="d-flex m-3">
+						<!-- Botão iniciar-->
+						<button type="button" class="btn cardTrilhaDetalheButton">Iniciar</button>
+					</div>
+					
+				</div>
+				<!-- Final Card1 -->
+
+				<!-- coluna direita Card2 -->
+				<div class="cardTrilhaDetalhe row mt-4 p-3">
+
+					<!-- coluna direita Card2 linha1 -->
+					<div class="d-flex justify-content-between mt-3">
+
+						<!-- coluna numero Passo -->
+						<div class="p-2">
+							<h5><span class="badge badge-pill badge-primary">2</span></h5>
+						</div>
+
+						<!-- Titulo da Conhecimentos -->
+						<div  class="p-2">
+							<span class="rankingTitle">Categorização</span>
+						</div>
+
+						<!-- coluna tempo da trilha -->
+						<div class="p-2">
+							<img alt="Tempo trilha" src="../pages/img/clock.svg"> 2 min
+						</div>
+
+						<!-- coluna esquerda Sua Pontuação -->
+						<div class="p-2">
+							<img alt="Quantos passos" src="../pages/img/play.svg"> 7 perguntas
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card2 linha2 -->
+					<div class="d-flex justify-content-between">
+
+						<!-- Descrição do passo-->
+						<div  class="mt-3">
+							<span class="cardTrilhaTexto">Quanto às formas gráficas de apresentação, as marcas podem ser classificadas em nominativa, figurativa, mista e tridimensional.</span>
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card1 linha2 -->
+					<!-- <div class="d-flex justify-content-end mt-3"> -->
+						<!-- Descrição do passo-->
+						<!-- <button type="button" class="btn cardTrilhaDetalheButton">Iniciar</button>
+					</div> -->
+					
+				</div>
+				<!-- Final Card2 -->
+
+				<!-- coluna direita Card3 -->
+				<div class="cardTrilhaDetalhe row mt-4 p-3">
+
+					<!-- coluna direita Card3 linha1 -->
+					<div class="d-flex justify-content-between mt-3">
+
+						<!-- coluna numero Passo -->
+						<div class="p-2">
+							<h5><span class="badge badge-pill badge-primary">3</span></h5>
+						</div>
+
+						<!-- Titulo da Conhecimentos -->
+						<div  class="p-2">
+							<span class="rankingTitle">Preparação</span>
+						</div>
+
+						<!-- coluna tempo da trilha -->
+						<div class="p-2">
+							<img alt="Tempo trilha" src="../pages/img/clock.svg"> 2 min
+						</div>
+
+						<!-- coluna esquerda Sua Pontuação -->
+						<div class="p-2">
+							<img alt="Quantos passos" src="../pages/img/play.svg"> 2 perguntas
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card3 linha2 -->
+					<div class="d-flex justify-content-between">
+
+						<!-- Descrição do passo-->
+						<div  class="mt-3">
+							<span class="cardTrilhaTexto">Busca de anterioriade, preparação do arquivo digital, cadastramento....</span>
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card3 linha2 -->
+					<!-- <div class="d-flex justify-content-end mt-3"> -->
+						<!-- Descrição do passo-->
+						<!-- <button type="button" class="btn cardTrilhaDetalheButton">Iniciar</button>
+					</div> -->
+					
+				</div>
+				<!-- Final Card3 -->
+
+				<!-- coluna direita Card4 -->
+				<div class="cardTrilhaDetalhe row mt-4 p-3">
+
+					<!-- coluna direita Card4 linha1 -->
+					<div class="d-flex justify-content-between mt-3">
+
+						<!-- coluna numero Passo -->
+						<div class="p-2">
+							<h5><span class="badge badge-pill badge-primary">4</span></h5>
+						</div>
+
+						<!-- Titulo da Conhecimentos -->
+						<div  class="p-2">
+							<span class="rankingTitle">Pagamento</span>
+						</div>
+
+						<!-- coluna tempo da trilha -->
+						<div class="p-2">
+							<img alt="Tempo trilha" src="../pages/img/clock.svg"> 2 min
+						</div>
+
+						<!-- coluna esquerda Sua Pontuação -->
+						<div class="p-2">
+							<img alt="Quantos passos" src="../pages/img/play.svg"> 2 perguntas
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card3 linha2 -->
+					<div class="d-flex justify-content-between">
+
+						<!-- Descrição do passo-->
+						<div  class="mt-3">
+							<span class="cardTrilhaTexto">Informações sobre o passo Informações sobre o passo Informações sobre o passo</span>
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card4 linha2 -->
+					<!-- <div class="d-flex justify-content-end mt-3"> -->
+						<!-- Descrição do passo-->
+						<!-- <button type="button" class="btn cardTrilhaDetalheButton">Iniciar</button>
+					</div> -->
+					
+				</div>
+				<!-- Final Card4 -->
+
+				<!-- coluna direita Card5 -->
+				<div class="cardTrilhaDetalhe row mt-4 p-3">
+
+					<!-- coluna direita Card5 linha1 -->
+					<div class="d-flex justify-content-between mt-3">
+
+						<!-- coluna numero Passo -->
+						<div class="p-2">
+							<h5><span class="badge badge-pill badge-primary">5</span></h5>
+						</div>
+
+						<!-- Titulo da Conhecimentos -->
+						<div  class="p-2">
+							<span class="rankingTitle">Protocolo</span>
+						</div>
+
+						<!-- coluna tempo da trilha -->
+						<div class="p-2">
+							<img alt="Tempo trilha" src="../pages/img/clock.svg"> 2 min
+						</div>
+
+						<!-- coluna esquerda Sua Pontuação -->
+						<div class="p-2">
+							<img alt="Quantos passos" src="../pages/img/play.svg"> 2 perguntas
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card3 linha2 -->
+					<div class="d-flex justify-content-between">
+
+						<!-- Descrição do passo-->
+						<div  class="mt-3">
+							<span class="cardTrilhaTexto">Informações sobre o passo Informações sobre o passo Informações sobre o passo</span>
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card5 linha2 -->
+					<!-- <div class="d-flex justify-content-end mt-3"> -->
+						<!-- Descrição do passo-->
+						<!-- <button type="button" class="btn cardTrilhaDetalheButton">Iniciar</button>
+					</div> -->
+					
+				</div>
+				<!-- Final Card5 -->
+
+				<!-- coluna direita Card6 -->
+				<div class="cardTrilhaDetalhe row mt-4 p-3">
+
+					<!-- coluna direita Card6 linha1 -->
+					<div class="d-flex justify-content-between mt-3">
+
+						<!-- coluna numero Passo -->
+						<div class="p-2">
+							<h5><span class="badge badge-pill badge-primary">6</span></h5>
+						</div>
+
+						<!-- Titulo da Conhecimentos -->
+						<div  class="p-2">
+							<span class="rankingTitle">Acompanhamento</span>
+						</div>
+
+						<!-- coluna tempo da trilha -->
+						<div class="p-2">
+							<img alt="Tempo trilha" src="../pages/img/clock.svg"> 2 min
+						</div>
+
+						<!-- coluna esquerda Sua Pontuação -->
+						<div class="p-2">
+							<img alt="Quantos passos" src="../pages/img/play.svg"> 2 perguntas
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card3 linha2 -->
+					<div class="d-flex justify-content-between">
+
+						<!-- Descrição do passo-->
+						<div  class="mt-3">
+							<span class="cardTrilhaTexto">Informações sobre o passo Informações sobre o passo Informações sobre o passo</span>
+						</div>
+							
+					</div>
+
+					<!-- coluna direita Card6 linha2 -->
+					<!-- <div class="d-flex justify-content-end mt-3"> -->
+						<!-- Descrição do passo-->
+						<!-- <button type="button" class="btn cardTrilhaDetalheButton">Iniciar</button>
+					</div> -->
+					
+				</div>
+				<!-- Final Card6 -->
+
+	
+			</div>
+		</div>
+	</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<script src="js/myChart.js"></script>
+  </body>
+</html>

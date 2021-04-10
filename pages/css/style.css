@@ -175,3 +175,16 @@ left: 500px; */
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000000;
 }
+
+.cardTrilhaDetalhe{
+    background: #FFFFFF;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.cardTrilhaDetalheButton {
+    background: #27AE60;
+    border-radius: 8px;
+    color: #F2F2F2;
+}
