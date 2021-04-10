@@ -44,7 +44,7 @@ The above copyright notice and this permission notice shall be included in all c
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="./dashboard.html">
+            <a class="nav-link" href="./dashboard.php">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
@@ -176,13 +176,13 @@ The above copyright notice and this permission notice shall be included in all c
                   <h4 class="card-title">Trilhas</h4>
                   <p class="card-category">Cadastre uma nova trilha do Zero a PI</p>
                 </div>
-                <div class="card-body">
+                <div class="card-body">                    
                   <form method="get" action="addtrilha.php">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Nome da trilha</label>
-                          <input type="text" nome="nometrilha" id="nometrilha" class="form-control">
+                          <input type="text" name="nometrilha" class="form-control" />
                         </div>
                       </div>                      
                     </div>                    
@@ -192,12 +192,12 @@ The above copyright notice and this permission notice shall be included in all c
                           <label>Descritivo</label>
                           <div class="form-group">
                             <label class="bmd-label-floating"> Crie um descritivo explicativo sobre a trilha.</label>
-                            <textarea class="form-control" nome="descricaotrilha" id="descricaotrilha" rows="5"></textarea>
+                            <textarea class="form-control" name="descricaotrilha"  rows="5"></textarea>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary pull-right">Cadastrar</button>
+                    <input type="submit" value="Cadastrar" class="btn btn-primary pull-right">
                     <div class="clearfix"></div>
                   </form>
                 </div>
