@@ -192,3 +192,73 @@ left: 500px; */
 .e:hover{
     background-color:#66EFD4;
  }
+
+ .respCertaTitle{
+    background-color:#27AE60;
+    width: 100%;
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #F2F2F2;
+ }
+
+ .respCerta{
+    background-color:#27AE60;
+    width: 100%;
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #F2F2F2;
+ }
+
+ .respErradaTitle{
+    background-color:#ae2727;
+    width: 100%;
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #F2F2F2;
+ }
+
+ .respErrada{
+    background-color:#ae2727;
+    width: 100%;
+    font-family: Rawline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #F2F2F2;
+ }
+
+ .btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+    background-color:#27AE60;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
