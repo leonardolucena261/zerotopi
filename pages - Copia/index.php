@@ -1,6 +1,6 @@
-</body>
-</html>
-
+<?php 
+    session_start();    
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,7 +34,7 @@
 			</div>
 			<!-- Nome Player -->
 			<div class="col-md-2">
-					<span class="nomeJogador">Jogador 1</span>
+					<span class="nomeJogador"><?php echo($_SESSION['nome'] );?></span>
 					<span class="pontosJogador">360 pontos</span>
 			</div>
 		</div>
@@ -51,15 +51,15 @@
 			
 			<!-- Cartão azul -->
 			<div id="card1" class="col-md-7 p-4">
-
+				<a href="#">
 				<!-- Cartão azul Linha1 -->
 				<div class="d-flex justify-content-between">
 
 					<!-- Cartão azul Imagem Trilha -->
 					<div class="col-md-6">
-						<img alt="Imagem do R de Registro" src="../pages/img/Img1.png">
+						<img alt="Imagem do R de Registro" src="../pages/img/Img1.png">						
 					</div>
-
+					
 					<!-- Cartão azul Sua Pontuação -->
 					<div id="card1text1" class="mt-3">
 						<span>Sua melhor pontuação</span>
@@ -83,7 +83,9 @@
 						<canvas id="chPie" style="max-width: 130px"></canvas>
 					</div>
 				</div>
+				</a>
 			</div>
+			
 
 			<!-- Ranking -->
 			<div id="ranking" class="col-md-4 offset-md-1">
@@ -157,68 +159,38 @@
 		<div id="tile" class="row mt-4">
 			<div>Escolha sua trilha</div>
 		</div>
+
 		<!-- Bloco 2 -->
 		<div class="row my-4">
-
+			<?php
+				//ini_set('display_errors', 1) ;
+				$pdo = new PDO('pgsql:host=localhost;dbname=zerotopi;user=postgres;password=admin');
+				$consulta = $pdo->query("SELECT id, nome, descricao FROM public.trilha;");
+				$cont = 1;
+				while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
+			?>
 			<!-- Card 1 -->
-			<div class="col-md-2 cardTrilha">
+			<div class="<?php if($cont==1){echo('col-md-2 cardTrilha');}else{echo('col-md-2 offset-md-1 cardTrilha');}?>" >
+				<a href="trilhaDetalhe.php?id=<?php echo($linha['id']); ?>" >
 				<div class="d-flex flex-column justify-content-between m-3">
 					<div class="d-flex justify-content-center my-3">
 						<img alt="Imagem do R de Registro" src="../pages/img/Img1.png">
 					</div>
 					<div  class="d-flex flex-row mt-3 cardTrilhaTitulo">
-						<span>Marcas</span>
+						<span> <?php echo($linha['nome']); ?> </span>
 					</div>
 					<div  class="d-flex flex-row my-3 cardTrilhaTexto">
-						<span>Aprenda de forma divertida como criar sua marca no INPI</span>
+						<span><?php echo($linha['descricao']); ?></span>
 					</div>
 				</div>
+				</a>
 			</div>
 
-			<!-- Card 2 -->
-			<div class="col-md-2 offset-md-1 cardTrilha">
-				<div class="d-flex flex-column justify-content-between m-3">
-					<div class="d-flex justify-content-center my-3">
-						<img alt="Imagem do R de Registro" src="../pages/img/Img1.png">
-					</div>
-					<div  class="d-flex flex-row mt-3 cardTrilhaTitulo">
-						<span>Marcas</span>
-					</div>
-					<div  class="d-flex flex-row my-3 cardTrilhaTexto">
-						<span>Aprenda de forma divertida como criar sua marca no INPI</span>
-					</div>
-				</div>
-			</div>
-
-			<!-- Card 3 -->
-			<div class="col-md-2 offset-md-1 cardTrilha">
-				<div class="d-flex flex-column justify-content-between m-3">
-					<div class="d-flex justify-content-center my-3">
-						<img alt="Imagem do R de Registro" src="../pages/img/Img1.png">
-					</div>
-					<div  class="d-flex flex-row mt-3 cardTrilhaTitulo">
-						<span>Marcas</span>
-					</div>
-					<div  class="d-flex flex-row my-3 cardTrilhaTexto">
-						<span>Aprenda de forma divertida como criar sua marca no INPI</span>
-					</div>
-				</div>
-			</div>
-
-			<!-- Card 4 -->
-			<div class="col-md-2 offset-md-1 cardTrilha">
-				<div class="d-flex flex-column justify-content-between m-3">
-					<div class="d-flex justify-content-center my-3">
-						<img alt="Imagem do R de Registro" src="../pages/img/Img1.png">
-					</div>
-					<div  class="d-flex flex-row mt-3 cardTrilhaTitulo">
-						<span>Marcas</span>
-					</div>
-					<div  class="d-flex flex-row my-3 cardTrilhaTexto">
-						<span>Aprenda de forma divertida como criar sua marca no INPI</span>
-					</div>
-				</div>
-			</div>
+			<?php 
+				++$cont;
+				}
+			?>
+			
 
 		</div>
 	</div>
