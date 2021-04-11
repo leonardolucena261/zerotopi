@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <style type="text/css">
@@ -8,6 +9,7 @@
 
             body {
                 margin: 0px;
+                background: #eee;
             }
 
             #container {
@@ -158,7 +160,7 @@
 
             // Start the animation.
             animate();
-            setTimeout(() => { window.location.href = "index.php"; }, 5000); 
+            setTimeout(() => { window.location.href = "./pages/index.php"; }, 5000); 
 
             
         </script>

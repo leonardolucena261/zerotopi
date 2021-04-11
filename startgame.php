@@ -20,17 +20,24 @@
             var_dump($stmt->rowCount());
             $_SESSION['nome'] = $nome;
             $_SESSION['email'] = $email;
-        }
-    }else{
-        if($resultado['nome'] != $nome){
-            //direcionar para tela de confirmação de atualização de dados           
-        }else{
-            //direcionar para o jogo
             ?>
             <script type="text/javascript">
                 window.location.href = "conferindologin.php";
             </script>    
             <?php
         }
+    }else{
+        //if($resultado['nome'] != $nome){
+            //direcionar para tela de confirmação de atualização de dados           
+        //}else{
+            //direcionar para o jogo
+            $_SESSION['nome'] = $nome;
+            $_SESSION['email'] = $email;
+            ?>
+            <script type="text/javascript">
+                window.location.href = "conferindologin.php";
+            </script>    
+            <?php
+        
     }
 ?>
