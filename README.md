@@ -1,4 +1,4 @@
-# Do Zero à PI - Grupo 26 - Higge - INPI Hack
+# Do Zero à PI - Grupo 26 - Hygge - INPI Hack
 ![](https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/LogoZerotoPi.png)
 </br>
 Este é um projeto desenvolvido no evento [INPI Hack](https://www.gov.br/inpi/pt-br/hackathon)
@@ -35,7 +35,7 @@ Abaixo segue a lista dos recursos Utizados:
 - [Figma](https://www.figma.com/) (Design de telas e Prototipagem)
 - [Gimp](https://www.gimp.org/) (Edição de imagens)
 - [Inkscape](https://inkscape.org/pt-br/) (Criação de imagens vetoriais)
-- [XAMPP] (https://www.apachefriends.org/pt_br/index.html) (Servidor PHP)
+- [XAMPP](https://www.apachefriends.org/pt_br/index.html) (Servidor PHP)
 
 ## `Passo 1` - Clone esse repositório para sua máquina
 
@@ -80,17 +80,33 @@ abra essa url [http://localhost:80/](http://localhost:80/) e o projeto vai estar
 ### Final da Trilha
 ![](https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/finalTrilha.png)
 
-### Grupo 26 - Higge
+### Grupo 26 - Hygge
 <div align="center">
 
+  <div>
   <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/FernandaLefevre.jpeg" alt="Fernanda" width="200" height="200">
   
+  </div>
+
+  <div>
   <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/LeonardoSucena.jpeg" alt="Leonardo" width="200" height="200">
-  
+
+  </div>
+
+  <div>
   <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/PedroFranca.jpeg" alt="Pedro" width="200" height="200">
+
+  </div>
+
+  <div>
+    <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/RitaMeirelles.jpeg" alt="Rita" width="200" height="200">
   
-  <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/RitaMeirelles.jpeg" alt="Rita" width="200" height="200">
-  
-  <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/RogerBif.jpeg" alt="Roger" width="200" height="200">
-  
+  </div>
+
+  <div>
+    <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/RogerBif.jpeg" alt="Roger" width="200" height="200">
+    UX Designer e Front-End (telas do Game)
+    @rogerbif
+  </div>
+
 </div>
