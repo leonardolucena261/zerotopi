@@ -3,7 +3,7 @@
 </br>
 Este é um projeto desenvolvido no evento [INPI Hack](https://www.gov.br/inpi/pt-br/hackathon)
 Do Zero à PI é uma plataforma Gamificada para instruir ludicamente quanto aos processos de registro de
-Marcas, Patentes, Referencia Geografica, entre outros oferecidos pelo INPI para que o usurário possa tomar
+Marcas, Patentes, indicação geográfica, entre outros oferecidos pelo INPI para que o usurário possa tomar
 Conhecimento dos passos a serem realizados para efetuar as petições da forma correta diminuindo assim as falhas na entrega de petições
 
 ## Sobre o Projeto
