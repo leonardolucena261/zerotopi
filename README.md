@@ -23,8 +23,7 @@ Quais as vantagens para o INPI ao utilizar a plataforma Do Zero à PI?
 ### Roadmap 
 O que faremos no futuro?
 
-- Primeiro passo: Disponibilização de novas trilhas para o depósito de patentes, desenho 
-industrial e outros ativos de PI
+- Primeiro passo: Disponibilização de novas trilhas para o depósito de patentes, desenho industrial e outros ativos de PI
 - Segundo passo: Criar outras modalidades de jogos dentro da plataforma, como caça-palavras, jogo da memória, etc.
 - Terceiro passo: Disponibilizar os jogos em outros canais de acesso, com a criação de um API para smartphones visando a disseminação da cultura de propriedade intelectual para o público infantojuvenil.
 - Quarto passo: Extrair e contabilizar dados sobre a utilização da plataforma para entender quais pontos de maior dificuldade para o registro.
@@ -113,7 +112,7 @@ abra essa url [http://localhost:80/](http://localhost:80/) e o projeto vai estar
   <div>
     <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/RogerBif.jpeg" alt="Roger" width="200" height="200">
     UX Designer e Front-End (telas do Game)
-    @rogerbif
+    [@rogerbif](https://www.linkedin.com/in/rogerbif/)
   </div>
 
 </div>
