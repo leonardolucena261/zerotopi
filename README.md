@@ -1,34 +1,41 @@
 # Do Zero à PI - Grupo 26 - Hygge - INPI Hack
 ![](https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/LogoZerotoPi.png)
 </br>
+</br>
+</br>
 Este é um projeto desenvolvido no evento [INPI Hack](https://www.gov.br/inpi/pt-br/hackathon)
 Do Zero à PI é uma plataforma Gamificada para instruir ludicamente quanto aos processos de registro de
-Marcas, Patentes, indicação geográfica, entre outros oferecidos pelo INPI para que o usurário possa tomar
-Conhecimento dos passos a serem realizados para efetuar as petições da forma correta diminuindo assim as falhas na entrega de petições
+marcas, patentes, desenho industrial, programa de computador, topografia de circuitos integrados, 
+indicação geográfica, entre outros oferecidos pelo INPI para que o usurário possa tomar
+conhecimento dos passos a serem realizados para a proteção de seus ativos de Propriedade industrial, 
+a fim de minimizar os arquivamentos e falhas no registro.
 
 ## Sobre o Projeto
-> Este projeto tem como objetivo informar e incentivar o planejamento de petições de registros no INPI através de uma plataforma gamificada.
+> O projeto tem como objetivo melhorar a qualidade dos pedidos de marcas depositados 
+no INPI e criar um ambiente propício ao aprendizado, diminuindo as exigências e aumentando as concessões.
 
-Quais as vantagens para o INPI utilziar a plataforma Do Zero à PI? 
-- Atrair o público e engajar através da gamificação.
-- Tornar o processo de petição mais assertivo com o entendimento lúdico do processo.
-- Diminuir o tempo de trabalho em analises de petição devido as postagens mais corretas.;
+Quais as vantagens para o INPI ao utilizar a plataforma Do Zero à PI? 
+- Disseminar o conhecimento sobre PI e aumentar o número de concessões de registros;
+- Utilizar jogos e plataformas lúdicas para o ensino de PI;
+- Aumentar a qualidade dos depósitos pelos usuários, diminuindo indeferimentos;
+- Promover ferramentas que para que o usuário se sinta mais seguro, comprometido e motivado para acompanhar o processo até a sua concessão;
 
 ### Roadmap 
 O que faremos no futuro?
 
-- Primeiro passo: Vincular com redes sociais e login e-gov para disceminar a cultura de PI
-- Segundo passo: Criar outras modalidades de jogos dentro da plataforma, como Caça-palavras, jogo da memória, etc.
-- Terceito passo: Extrair e contabilizar numeros de como foi utilizada a plataforma para entender quais pontos de maior dificuldade para efetuar petições.
-- Quarto passo: 
+- Primeiro passo: Disponibilização de novas trilhas para o depósito de patentes, desenho 
+industrial e outros ativos de PI
+- Segundo passo: Criar outras modalidades de jogos dentro da plataforma, como caça-palavras, jogo da memória, etc.
+- Terceiro passo: Disponibilizar os jogos em outros canais de acesso, com a criação de um API para smartphones visando a disseminação da cultura de propriedade intelectual para o público infantojuvenil.
+- Quarto passo: Extrair e contabilizar dados sobre a utilização da plataforma para entender quais pontos de maior dificuldade para o registro.
 
-### Prototipo Navegavel 
+### Protótipo Navegável  
 [click Aqui](https://www.figma.com/proto/WlIAMvbG0El9tl6OLRwUp6/Do-Zero-%C3%A0-PI?node-id=1%3A2&scaling=min-zoom)
 
 ### Recursos usados 
 
-Este projeto foi totalmente construido utilizando recursos, plataformas, softwares Open Source (código aberto)<br/>
-Abaixo segue a lista dos recursos Utizados:
+Este projeto foi totalmente construído utilizando recursos, plataformas, softwares Open Source (código aberto)<br/>
+Abaixo segue a lista dos recursos utilizados:
 
 - [PHP](https://www.php.net/) (Linguagem de Programação Front-End e Back-End)
 - [PostgreSQL](https://www.postgresql.org/) (Banco de Dados Relacional)
