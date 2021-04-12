@@ -97,6 +97,7 @@ abra essa url [http://localhost:80/](http://localhost:80/) e o projeto vai estar
     <span>Propriedade Industrial</span>
     </br>
     <a href="https://www.instagram.com/fernandalefevre/">@fernandalefevre</a>
+    </br>
   </div>
 
   <div>
@@ -107,6 +108,7 @@ abra essa url [http://localhost:80/](http://localhost:80/) e o projeto vai estar
     <span>Tecnologia da Informação e Comunicação (TIC)</span>
     </br>
     <a href="https://github.com/leonardolucena261">@leonardolucena261</a>
+    </br>
   </div>
 
   <div>
@@ -117,6 +119,7 @@ abra essa url [http://localhost:80/](http://localhost:80/) e o projeto vai estar
     <span>Gestão de Negócios</span>
     </br>
     <a href="https://www.linkedin.com/in/pedrofranca511/">@pedrofranca511</a>
+    </br>
   </div>
 
   <div>
@@ -127,6 +130,7 @@ abra essa url [http://localhost:80/](http://localhost:80/) e o projeto vai estar
     <span>Gestão de Negócios</span>
     </br>
     <a href="https://www.linkedin.com/in/ritameirelles/">@ritameirelles</a>
+    </br>
   </div>
 
   <div>
@@ -137,6 +141,7 @@ abra essa url [http://localhost:80/](http://localhost:80/) e o projeto vai estar
     <span>Experiência do Usuário (UX Designer) e Front-End (telas do Game)</span>
     </br>
     <a href="https://www.linkedin.com/in/rogerbif/">@rogerbif</a>
+    </br>
   </div>
 
 </div>
