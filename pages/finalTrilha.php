@@ -135,8 +135,11 @@
 			</div>
 		</div>
 
+<<<<<<< HEAD:pages/finalTrilha.php
 		
 
+=======
+>>>>>>> e1e7450c6fbff599650f236f651162cce734ccc2:pages/finalTrilha.html
 	</div>
 
     <script src="js/jquery.min.js"></script>
