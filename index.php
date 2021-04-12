@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    session_destroy();
+
+?>
 <html>
     <head>
         <style type="text/css">
@@ -279,8 +284,8 @@
     </head>
     <body>
         <hgroup>
-            <h1>Do 0 à PI</h1>
-            <h3>Criar um breve descritivo </h3>
+            <h1><img height="55" src="pages/img/Zerotopi.png"></h1>
+            <h3>Aprenda tudo sobre Propriedade Intelectual! </h3>
         </hgroup>
         <form method="get" action="startgame.php">
             <div class="group">

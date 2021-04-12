@@ -1,5 +1,22 @@
 <?php 
-    session_start();    
+    session_start();  
+	$pdo = new PDO('pgsql:host=localhost;dbname=zerotopi;user=postgres;password=admin');
+	
+	$usuario = $pdo->query("SELECT * FROM public.player Where email = '".$_SESSION['email']."';");
+		
+	$rst = $usuario->fetch(PDO::FETCH_ASSOC);
+	$_SESSION['id_jogador'] = $rst['id'];
+
+	$usuarioponto = $pdo->query("SELECT SUM(ponto) as ponto FROM public.acerto Where id_jogador = '".$_SESSION['id_jogador']."';");
+	$rst = $usuarioponto->fetch(PDO::FETCH_ASSOC);
+
+	$_SESSION['pontos'] = $rst['ponto'];
+
+	if(isset($_SESSION['id_trilha'])){
+		$consulta = $pdo->query("SELECT id, nome, descricao FROM public.trilha where id =".$_SESSION['id_trilha'].";");
+		$linha = $consulta->fetch(PDO::FETCH_ASSOC);
+	}
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +52,7 @@
 			<!-- Nome Player -->
 			<div class="col-md-2">
 					<span class="nomeJogador"><?php echo($_SESSION['nome'] );?></span>
-					<span class="pontosJogador">360 pontos</span>
+					<span class="pontosJogador"><?php echo($_SESSION['pontos'])?></span>
 			</div>
 		</div>
 		
@@ -51,7 +68,7 @@
 			
 			<!-- Cartão azul -->
 			<div id="card1" class="col-md-7 p-4">
-				<a href="#">
+				<a href="<?php if(isset($linha)){echo("trilhaDetalhe.php?id=".$linha['id']);} ?>">
 				<!-- Cartão azul Linha1 -->
 				<div class="d-flex justify-content-between">
 
@@ -64,7 +81,7 @@
 					<div id="card1text1" class="mt-3">
 						<span>Sua melhor pontuação</span>
 						<br>
-						<span>276 pontos</span>
+						<span><?php echo($_SESSION['pontos'])?></span>
 					</div>
 				</div>
 
@@ -73,8 +90,8 @@
 
 					<!-- Titulo da trilha e descrição -->
 					<div  class="col-md-6 mt-3">
-						<span id="card1text2">Marcas</span>
-						<span id="card1text3">Aprenda de forma divertida como criar sua marca no INPI</span>
+						<span id="card1text2"><?php if(isset($linha)){echo($linha['nome']);} ?></span>
+						<span id="card1text3"><?php if(isset($linha)){echo($linha['descricao']);} ?></span>
 					</div>
 
 					<!-- Porcentagem -->
@@ -164,7 +181,7 @@
 		<div class="row my-4">
 			<?php
 				//ini_set('display_errors', 1) ;
-				$pdo = new PDO('pgsql:host=localhost;dbname=zerotopi;user=postgres;password=admin');
+				
 				$consulta = $pdo->query("SELECT id, nome, descricao FROM public.trilha;");
 				$cont = 1;
 				while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {

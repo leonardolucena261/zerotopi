@@ -1,3 +1,8 @@
+<?php 
+  session_start();
+  $_SESSION['admin_id_pergunta'] = $_GET['id'];
+?>
+
 <!--
 =========================================================
 Material Dashboard - v2.1.2

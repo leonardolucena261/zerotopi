@@ -1,6 +1,3 @@
-</body>
-</html>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,7 +32,7 @@
 			<!-- Nome Player -->
 			<div class="col-md-2">
 					<span class="nomeJogador">Jogador 1</span>
-					<span class="pontosJogador">360 pontos</span>
+				
 			</div>
 		</div>
 		
@@ -138,7 +135,7 @@
 			</div>
 		</div>
 
-		<button id="startButton">Drop Confetti</button>
+		
 
 	</div>
 

@@ -2,6 +2,7 @@
     session_start();  
 	$_SESSION['id_trilha'] = $_GET['id'];
 	ini_set('display_errors', 1) ;
+	$_SESSION['pergunta'] = array();
 ?>
 
 <!DOCTYPE html>
@@ -37,15 +38,15 @@
 			<!-- Nome Player -->
 			<div class="col-md-2">
 					<span class="nomeJogador"><?php echo($_SESSION['nome'] );?></span>
-					<span class="pontosJogador">360 pontos</span>
+					
 			</div>
 		</div>
 
 		<!-- fechar -->
 		<div id="tile" class="row mt-4">
-			<button type="button" class="close" aria-label="Close" href="#link" value="index">
+		<a href="./index.php"><button type="button" class="close" aria-label="Close" href="#link" value="index">
 				<span aria-hidden="true">&times;</span>
-			</button>
+			</button></a>
 		</div>
 		
 		<?php			
@@ -149,7 +150,11 @@
 			<div class="col-md-6 offset-md-1">
 				<?php 
 					$count_quiz = 1;
+					$_SESSION['quiz'] = array();
 					while($linha_quiz = $quiz->fetch(PDO::FETCH_ASSOC)){
+						if(!in_array($linha['id'], $_SESSION['pergunta'] )){
+							array_push($_SESSION['quiz'], $linha_quiz['id']);
+						}
 						$pergunta = $pdo->query("SELECT * FROM public.pergunta where id_quiz =".$linha_quiz['id'].";");						
 				?>
 				<!-- coluna direita Card1 -->

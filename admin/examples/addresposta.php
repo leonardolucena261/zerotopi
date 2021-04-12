@@ -1,4 +1,5 @@
 <?php
+    session_start();
     extract($_GET);
     
     if($resposta!=""){
@@ -17,7 +18,7 @@
             ));
             ?>
             <script type="text/javascript">
-                    window.location.href = "cadastraralternativa.php?id=<?php echo($idalternativa);?>&msg=Quiz cadastrada com sucesso!";
+                    window.location.href = "cadastraralternativa.php?id=<?php echo($_SESSION['admin_id_pergunta']);?>&msg=Quiz cadastrada com sucesso!";
             </script>
             <?php    
         }

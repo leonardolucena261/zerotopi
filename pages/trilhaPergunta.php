@@ -1,5 +1,9 @@
-</body>
-</html>
+<?php 
+    session_start();  
+	$_SESSION['id_quiz'] = $_GET['id'];
+	
+	ini_set('display_errors', 0) ;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,17 +37,17 @@
 			</div>
 			<!-- Nome Player -->
 			<div class="col-md-2">
-					<span class="nomeJogador">Jogador 1</span>
-					<span class="pontosJogador">360 pontos</span>
+					<span class="nomeJogador"><?php echo($_SESSION['nome'] );?></span>
+					
 			</div>
 		</div>
 
 		<!-- fechar -->
 		<div class="row mt-4">
 			<div class="col-md-1">
-				<button type="button" class="close" aria-label="Close" href="#link" value="index">
+				<a href="./index.php"><button type="button" class="close" aria-label="Close" value="index">
 					<span aria-hidden="true">&times;</span>
-				</button>
+				</button></a>
 			</div>
 			<div class="col-md-1">
 				<img alt="Tempo trilha" src="../pages/img/clock.svg"> 
@@ -56,11 +60,29 @@
 				</div>
 			</div>
 		</div>
+		<?php 
+			$pdo = new PDO('pgsql:host=localhost;dbname=zerotopi;user=postgres;password=admin');
+			if(!isset($_GET['pergunta'])){
+				$consulta = $pdo->query("SELECT id, pergunta, id_quiz FROM public.pergunta where id_quiz =".$_GET['id'].";");
+			}else{
+				$consulta = $pdo->query("SELECT id, pergunta, id_quiz FROM public.pergunta where id =".$_GET['pergunta'].";");
+			}
+			if(is_array($_SESSION['pergunta']) and $_SESSION['pergunta']==NULL){		
+				$_SESSION['pergunta'] = array();			
+			}
 
+			$linha = $consulta->fetch(PDO::FETCH_ASSOC);
+			$_SESSION['id_pergunta'] = $linha['id'];
+
+			if(!in_array($linha['id'], $_SESSION['pergunta'] )){
+				array_push($_SESSION['pergunta'], $linha['id']);
+			}
+			//exit(var_dump($_SESSION['pergunta']));
+		?>
 		<!-- Titulo 1 -->
 		<div id="tile" class="row mt-4 mx-2">
 			<div>
-				O que é uma marca?
+				<?php echo($linha['pergunta']); ?>
 			</div>
 		</div>
 
@@ -82,90 +104,36 @@
 
 			<!-- coluna Perguntas -->
 			<div class="col-md-6">
-
+				<?php 
+					$consulta_alternativa = $pdo->query("SELECT id, letra, alternativa, id_pergunta, id_resposta FROM public.alternativa where id_pergunta =".$linha['id']." ORDER BY letra;");	
+					$cont_alternativa = 1;
+					while($linha_alternativa = $consulta_alternativa->fetch(PDO::FETCH_ASSOC))
+					{
+				?>
 				<!-- pergunta 1 -->
-				<div class="cardTrilhaDetalhe e row">
+				<div class="<?php if($cont_alternativa==1){ echo('cardTrilhaDetalhe e row');}else{echo('cardTrilhaDetalhe e row mt-3');}?>">
 
 					<!-- coluna direita Card1 linha1 -->
 					<div class="d-flex">
 
 						<!-- coluna numero Passo -->
 						<div class="p-3">
-							<h5><span class="badge badge-pill badge-primary">1</span></h5>
+							<h5><span class="badge badge-pill badge-primary"><?php echo($linha_alternativa['letra']); ?></span></h5>
 						</div>
 
 						<!-- Titulo da Conhecimentos -->
 						<div  class="p-3">
-							<span class="rankingTitle">é um sinal usado para identificar a origem de produtos ou serviços</span>
+							<a href="trilhaRespostaCheck.php?id=<?php echo($linha_alternativa['id']);?>"> <span class="rankingTitle"><?php echo($linha_alternativa['alternativa']); ?></span> </a>
 						</div>
 							
 					</div>
 					
 				</div>
 				<!-- pergunta 1 -->
-
-				<!-- pergunta 2 -->
-				<div class="cardTrilhaDetalhe e row mt-3">
-
-					<!-- coluna direita Card1 linha1 -->
-					<div class="d-flex">
-
-						<!-- coluna numero Passo -->
-						<div class="p-3">
-							<h5><span class="badge badge-pill badge-primary">2</span></h5>
-						</div>
-
-						<!-- Titulo da Conhecimentos -->
-						<div  class="p-3">
-							<span class="rankingTitle">é um símbolo que distingue produtos e/ou serviços da concorrência</span>
-						</div>
-							
-					</div>
-					
-				</div>
-				<!-- pergunta 2 -->
-
-				<!-- pergunta 3 -->
-				<div class="cardTrilhaDetalhe e row mt-3">
-
-					<!-- coluna direita Card1 linha1 -->
-					<div class="d-flex">
-
-						<!-- coluna numero Passo -->
-						<div class="p-3">
-							<h5><span class="badge badge-pill badge-primary">3</span></h5>
-						</div>
-
-						<!-- Titulo da Conhecimentos -->
-						<div  class="p-3">
-							<span class="rankingTitle">é um signo visualmente perceptível</span>
-						</div>
-							
-					</div>
-					
-				</div>
-				<!-- pergunta 3 -->
-
-				<!-- pergunta 4 -->
-				<div class="cardTrilhaDetalhe e row mt-3">
-
-					<!-- coluna direita Card1 linha1 -->
-					<div class="d-flex">
-
-						<!-- coluna numero Passo -->
-						<div class="p-3">
-							<h5><span class="badge badge-pill badge-primary">4</span></h5>
-						</div>
-
-						<!-- Titulo da Conhecimentos -->
-						<div  class="p-3">
-							<span class="rankingTitle">todas as alternativas acima</span>
-						</div>
-							
-					</div>
-					
-				</div>
-				<!-- pergunta 4 -->
+				<?php 
+					++$cont_alternativa;
+					}
+				?>		
 	
 			</div>
 		</div>
