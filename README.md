@@ -7,7 +7,7 @@ Este é um projeto desenvolvido no evento [INPI Hack](https://www.gov.br/inpi/pt
 Do Zero à PI é uma plataforma Gamificada para instruir ludicamente quanto aos processos de registro de
 marcas, patentes, desenho industrial, programa de computador, topografia de circuitos integrados, 
 indicação geográfica, entre outros oferecidos pelo INPI para que o usurário possa tomar
-conhecimento dos passos a serem realizados para a proteção de seus ativos de Propriedade industrial, 
+conhecimento dos passos a serem realizados para a proteção de seus ativos de Propriedade Industrial, 
 a fim de minimizar os arquivamentos e falhas no registro.
 
 ## Sobre o Projeto
@@ -18,7 +18,7 @@ Quais as vantagens para o INPI ao utilizar a plataforma Do Zero à PI?
 - Disseminar o conhecimento sobre PI e aumentar o número de concessões de registros;
 - Utilizar jogos e plataformas lúdicas para o ensino de PI;
 - Aumentar a qualidade dos depósitos pelos usuários, diminuindo indeferimentos;
-- Promover ferramentas que para que o usuário se sinta mais seguro, comprometido e motivado para acompanhar o processo até a sua concessão;
+- Promover ferramentas para que o usuário se sinta mais seguro, comprometido e motivado para acompanhar o processo até a sua concessão;
 
 ### Roadmap 
 O que faremos no futuro?
