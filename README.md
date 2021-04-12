@@ -91,36 +91,51 @@ abra essa url [http://localhost:80/](http://localhost:80/) e o projeto vai estar
 
   <div>
     <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/FernandaLefevre.jpeg" alt="Fernanda" width="200" height="200">
+    </br>
     <span>Fernanda Sá Freire Lefevre</span>
+    </br>
     <span>Propriedade Industrial</span>
+    </br>
     <a href="https://www.instagram.com/fernandalefevre/">@fernandalefevre</a>
   </div>
 
   <div>
     <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/LeonardoSucena.jpeg" alt="Leonardo" width="200" height="200">
+    </br>
     <span>Leonardo Naiã Soares de Lucena</span>
+    </br>
     <span>Tecnologia da Informação e Comunicação (TIC)</span>
+    </br>
     <a href="https://github.com/leonardolucena261">@leonardolucena261</a>
   </div>
 
   <div>
     <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/PedroFranca.jpeg" alt="Pedro" width="200" height="200">
+    </br>
     <span>Pedro Henrique França Oliveira</span>
+    </br>
     <span>Gestão de Negócios</span>
+    </br>
     <a href="https://www.linkedin.com/in/pedrofranca511/">@pedrofranca511</a>
   </div>
 
   <div>
     <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/RitaMeirelles.jpeg" alt="Rita" width="200" height="200">
+    </br>
     <span>Rita de Cassia Ferreira Meirelles</span>
+    </br>
     <span>Gestão de Negócios</span>
+    </br>
     <a href="https://www.linkedin.com/in/ritameirelles/">@ritameirelles</a>
   </div>
 
   <div>
     <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/RogerBif.jpeg" alt="Roger" width="200" height="200">
+    </br>
     <span>Roger de Souza Bif)</span>
-    <span>UX Designer e Front-End (telas do Game)</span>
+    </br>
+    <span>Experiência do Usuário (UX Designer) e Front-End (telas do Game)</span>
+    </br>
     <a href="https://www.linkedin.com/in/rogerbif/">@rogerbif</a>
   </div>
 
