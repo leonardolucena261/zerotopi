@@ -90,29 +90,38 @@ abra essa url [http://localhost:80/](http://localhost:80/) e o projeto vai estar
 <div align="center">
 
   <div>
-  <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/FernandaLefevre.jpeg" alt="Fernanda" width="200" height="200">
-  
+    <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/FernandaLefevre.jpeg" alt="Fernanda" width="200" height="200">
+    <span>Fernanda Sá Freire Lefevre</span>
+    <span>Propriedade Industrial</span>
+    <a href="https://www.instagram.com/fernandalefevre/">@fernandalefevre</a>
   </div>
 
   <div>
-  <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/LeonardoSucena.jpeg" alt="Leonardo" width="200" height="200">
-
+    <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/LeonardoSucena.jpeg" alt="Leonardo" width="200" height="200">
+    <span>Leonardo Naiã Soares de Lucena</span>
+    <span>Tecnologia da Informação e Comunicação (TIC)</span>
+    <a href="https://github.com/leonardolucena261">@leonardolucena261</a>
   </div>
 
   <div>
-  <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/PedroFranca.jpeg" alt="Pedro" width="200" height="200">
-
+    <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/PedroFranca.jpeg" alt="Pedro" width="200" height="200">
+    <span>Pedro Henrique França Oliveira</span>
+    <span>Gestão de Negócios</span>
+    <a href="https://www.linkedin.com/in/pedrofranca511/">@pedrofranca511</a>
   </div>
 
   <div>
     <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/RitaMeirelles.jpeg" alt="Rita" width="200" height="200">
-  
+    <span>Rita de Cassia Ferreira Meirelles</span>
+    <span>Gestão de Negócios</span>
+    <a href="https://www.linkedin.com/in/ritameirelles/">@ritameirelles</a>
   </div>
 
   <div>
     <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/RogerBif.jpeg" alt="Roger" width="200" height="200">
-    UX Designer e Front-End (telas do Game)
-    [rogerbif](https://www.linkedin.com/in/rogerbif/)
+    <span>Roger de Souza Bif)</span>
+    <span>UX Designer e Front-End (telas do Game)</span>
+    <a href="https://www.linkedin.com/in/rogerbif/">@rogerbif</a>
   </div>
 
 </div>
