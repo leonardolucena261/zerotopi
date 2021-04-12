@@ -112,7 +112,7 @@ abra essa url [http://localhost:80/](http://localhost:80/) e o projeto vai estar
   <div>
     <img src="https://raw.githubusercontent.com/rogerbif/rogerbif.github.io/master/assets/img/inpi/RogerBif.jpeg" alt="Roger" width="200" height="200">
     UX Designer e Front-End (telas do Game)
-    [@rogerbif](https://www.linkedin.com/in/rogerbif/)
+    [rogerbif](https://www.linkedin.com/in/rogerbif/)
   </div>
 
 </div>
